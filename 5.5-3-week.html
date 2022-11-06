@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Практичне завдання 5.4: Позиціонування</title>
+    <title>Практичне завдання 5.4: Flexbox-модель</title>
     <style>
       .container {
         font-family: "sans-serif";
@@ -25,34 +25,42 @@
         border-radius: 0.25em;
       }
 
-      .positioning li {
-        background-color: #828fdd;
-      }
-
       /* ========== Початок зони редагування =============== */
-
-      .positioning li:nth-child(2) {
-        position: absolute;
-        top: 30%;
-        background-color: #0000bb;
+      .flexbox {
+        display: flex;
+        flex-direction: row-reverse;
       }
 
-      .positioning {
-        position: relative;
+      .flexbox li {
+        width: 100%;
+
+        /* flex-basis: 200px; */
+        /* flex-grow: 1; */
       }
+
+      /* li:nth-child(1) {
+        order: 3;
+      }
+      li:nth-child(2) {
+        order: 2;
+      }
+
+      li:nth-child(4) {
+        order: -1;
+      } */
+
       /* ========== Кінець зони редагування =============== */
     </style>
   </head>
   <body>
-    <h1>Практичне завдання з CSS: Позиціювання</h1>
+    <h1>Практичне завдання з CSS: Flexbox-модель</h1>
     <section>
-      <ul class="container positioning">
+      <ul class="container flexbox">
         <li>1</li>
         <li>2</li>
         <li>3</li>
         <li>4</li>
       </ul>
-      <a href="./index.html"></a>
     </section>
   </body>
 </html>
