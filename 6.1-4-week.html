@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>Медіа запити</title>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="input.css" /> -->
+    <style>
+      #blocksWrapper {
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.1);
+      }
+      #first,
+      #second,
+      #third {
+        width: 10px;
+        height: 10px;
+        margin-top: 10px;
+      }
+      #first {
+        background-color: red;
+      }
+      #second {
+        background-color: blue;
+      }
+      #third {
+        background-color: green;
+      }
+
+      @media screen and (max-width: 1201px) {
+        #blocksWrapper {
+          border: 1px solid yellow;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        #first,
+        #second,
+        #third {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 1025px), screen and (min-width: 1399px) {
+        #first,
+        #second {
+          width: 50px;
+        }
+
+        #third {
+          width: 75px;
+        }
+      }
+
+      @media (orientation: landscape) {
+        #blocksWrapper {
+          display: flex;
+
+          justify-content: space-between;
+        }
+
+        #blocksWrapper > #first,
+        #second,
+        #third {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html"> на головну</a>
+    <hr />
+    <div id="blocksWrapper">
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+    </div>
+  </body>
+</html>
